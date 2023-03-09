@@ -3,15 +3,13 @@ $(document).ready(function(){
 		{
 
 		story:{
-			"origin": ["#introduction# #plot# #resolution# #moral#"],
-			"introduction": ["Once upon a time, in a far-off land, there lived a #character#."],
-			"plot": ["#character# went on a #journey# to find #goal#."],
-			"resolution": ["#character.capitalize# finally found #goal# and returned home safe and sound."],
-			"moral": ["The lesson of this story is #lesson#."],
-			"character": ["princess", "wizard", "knight", "dragon", "fairy"],
-			"journey": ["quest", "adventure", "voyage"],
-			"goal": ["a treasure", "a magical amulet", "a lost friend"],
-			"lesson": ["that it's important to be brave and persistent, even when things seem difficult", "that true friends are always there to help you", "that magic can be found in unexpected places"]
+			"origin":  ["#[#setPronouns#][#setSetting#][hero:#name#]introduction#"],
+			"introduction": ["After a rough tumble, #hero# opened #heroTheir# eyes and was shocked to find a #setting# before #heroThem#."],
+			"name": ["Aaron, Anika, Julie, Justin, Graham"],
+			"setPronouns": ["[heroThey:they][heroThem:them][heroTheir:their][heroTheirs:theirs]",
+				"[heroThey:she][heroThem:her][heroTheir:her][heroTheirs:hers]",
+				"[heroThey:he][heroThem:him][heroTheir:his][heroTheirs:his]"],
+			"setSetting": ["[setting:prehistoric land]", "[setting:futuristic city]", "[setting:victorian castle]"]
 		  }
 	};
 
@@ -20,6 +18,7 @@ $(document).ready(function(){
 	});
 	
 	function loadGrammar(){
+		words.story.name = ["Gooby"];
 		var grammar = tracery.createGrammar(words["story"]);
 		$('#output').html("<div>"+grammar.flatten('#origin#')+"</div>");
 		console.log("finished loading!");
