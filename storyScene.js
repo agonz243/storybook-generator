@@ -18,7 +18,7 @@ let index;
 let backgrounds = ["castle", "swamp", "futuristic city"];
 let bg;
 
-class Character {
+class StoryCharacter {
     // currently takes in colors for head, body, and legs
     // will be changed to take in images
     constructor(head, body, legs) {
@@ -66,11 +66,19 @@ function setUpButton() {
   
 // increments the story to next page
 function nextPage() {
-    if(index < sentences.length - 1) {
-      return index++;
-    } else {
-      // insert code to change to end screen
+    switch(state){
+        case("character"):
+            state = "story";
+            break;
+        case("story"):
+            if(index < sentences.length - 1) {
+                return index++;
+            } else {
+                // insert code to change to end screen
+            }
+            break;
     }
+    
 }
 
 // sets background image based on background string
