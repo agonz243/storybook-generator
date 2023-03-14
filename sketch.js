@@ -31,7 +31,7 @@ let username;
 let isSetup;
 
 function setup() {
-  username = "Unknown";
+  username = "Gooby";
   state = "character";
   createCanvas(1280, 720);
   background('#ECA869');
