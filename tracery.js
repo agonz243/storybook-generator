@@ -6,6 +6,12 @@ let sentences = [
     "THE END"];
 let data;
 
+let beginningText = [`One fine, interstellar morning, #hero# waltzed into the control room of Galactic Enterprise T-Ship 0345.`, 
+`#hero# was part of the cleaning crew for the ships Time-inator 9000 the galaxy's first working time machine!`, 
+`As usual, #heroThey# went about their usual routine, completing boring tasks like sweeping up #objects#, #objects#, 
+and #objects# from the Time-inator's platform`, `Suddenly, #hero# tripped over some #objects# and crashed into the Time-inator's controls!`, 
+`With a loud BUZZZ and a few CLINKS and CLANGS, the machine turned on with a bright flash!`]
+
 let words =
 {
     story: {
@@ -21,7 +27,9 @@ let words =
         "setPronouns": ["[heroThey:they][heroThem:them][heroTheir:their][heroTheirs:theirs]",
             "[heroThey:she][heroThem:her][heroTheir:her][heroTheirs:hers]",
             "[heroThey:he][heroThem:him][heroTheir:his][heroTheirs:his]"],
-        "setSetting": ["[setting:prehistoric land]", "[setting:futuristic city]", "[setting:victorian castle]"]
+        "setSetting": ["[setting:prehistoric land]", "[setting:futuristic city]", "[setting:victorian castle]"],
+
+        "objects": ["dinosaur bones, medieval armor, robot parts"]
     }
 };
 
