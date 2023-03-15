@@ -7,10 +7,10 @@ let sentences = [
 let data;
 
 let beginningText = [`One fine, interstellar morning, #hero# waltzed into the control room of Galactic Enterprise T-Ship 0345.| 
-#hero# was part of the cleaning crew for the ships Time-inator 9000 the galaxy's first working time machine!| 
+#hero# was part of the cleaning crew for the ship's #machine# the galaxy's first working time machine!| 
 As usual, #heroThey# went about #heroTheir# usual routine, completing boring tasks like sweeping up #objects#, #objects#, 
-and #objects# from the Time-inator's platform|Suddenly, #hero# tripped over some #objects# and crashed into the Time-inator's controls!| 
-With a loud BUZZZ and a few CLINKS and CLANGS, the machine turned on with a bright flash!`]
+and #objects# from the machine's platform|Suddenly, #hero# tripped over some #objects# and crashed into the controls!| 
+With a loud #noise# and a few #noise.s# and #noise.s#, the machine turned on with a bright flash!`]
 
 let words =
 {
@@ -19,7 +19,7 @@ let words =
         "story": ["#data#|#beginning#|#introduction#"],
         "data": ['{"setting": "#setting#"}'],
         "beginning": [],
-        "introduction": ["After a rough tumble, #hero# opened #heroTheir# eyes and was shocked to find a #setting# before #heroThem#."],
+        "introduction": ["After a rough tumble, #hero# opened #heroTheir# eyes and was shocked to find a #setting# before #heroThem#!"],
         "middle-intro": ["As #hero# shook off #heroTheir# confusion, a steady rumble caught #heroTheir# attention.", 
             "While #hero# was still finding #heroTheir# bearings #heroThey# sensed something and quickly looked up at their surroundings.",
             "#heroThey froze as they noticed a towering shadow looming behind them."],
@@ -30,7 +30,9 @@ let words =
             "[heroThey:he][heroThem:him][heroTheir:his][heroTheirs:his]"],
         "setSetting": ["[setting:prehistoric land]", "[setting:futuristic city]", "[setting:victorian castle]"],
 
-        "objects": ["dinosaur bones", "medieval armor", "robot parts"]
+        "objects": ["dinosaur bones", "medieval armor", "robot parts", "ancient swords", "futuristic gizmos", "dino eggs"],
+        "noise": ["BUZZ", "BANG", "POP", "POW", "SKADOOSH", "WHIRR", "PVVVT", "ZRRT"],
+        "machine": ["Time-Inator 9000", "Delorian Mk 2", "Time Warp Whirligig", "Timey Wimey XR100", "Quantum Leapfrog"]
     }
 };
 
