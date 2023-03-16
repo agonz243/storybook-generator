@@ -9,21 +9,23 @@ let data;
 let beginningText = [`One fine, interstellar morning, #hero# waltzed into the control room of Galactic Enterprise T-Ship 0345.| 
 #hero# was part of the cleaning crew for the ship's #machine# the galaxy's first working time machine!| 
 As usual, #heroThey# went about #heroTheir# usual routine, completing boring tasks like sweeping up #objects#, #objects#, 
-and #objects# from the machine's platform|Suddenly, #hero# tripped over some #objects# and crashed into the controls!| 
+and #objects# from the machine's platform.|Suddenly, #hero# tripped over some #objects# and crashed into the controls!| 
 With a loud #noise# and a few #noise.s# and #noise.s#, the machine turned on with a bright flash!`]
 
 let words =
 {
     story: {
         "origin": ["#[#setPronouns#][#setSetting#][hero:#name#]story#"],
-        "story": ["#data#|#beginning#|#introduction#"],
+        "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission#"],
         "data": ['{"setting": "#setting#"}'],
         "beginning": [],
         "introduction": ["After a rough tumble, #hero# opened #heroTheir# eyes and was shocked to find a #setting# before #heroThem#!"],
         "middle-intro": ["As #hero# shook off #heroTheir# confusion, a steady rumble caught #heroTheir# attention.", 
-            "While #hero# was still finding #heroTheir# bearings #heroThey# sensed something and quickly looked up at their surroundings.",
-            "#heroThey froze as they noticed a towering shadow looming behind them."],
-        "middle-plot": [ "#heroThey# stood in awe as #heroThey# gazed at a pack of fluffy T-rexes bounding after their prey"],
+            "While #hero# was still finding #heroTheir# bearings #heroThey# sensed something and quickly looked up at #heroTheir# surroundings.",
+            "#heroThey# froze as #heroThey# noticed a towering shadow looming behind #heroThem# and slowly turned..."],
+        "middle-plot": [ "#heroThey# stood in awe as #heroThey# gazed at a pack of fluffy T-rexes bounding after their prey",
+            "#hero# was stunned by the sight of a massive battle between #enemy.s#, #enemy.s#, and #enemy.s#!"],
+        "intermission": ["This didn't make any sense! The time machine must have jumbled up places, people and things from all sorts of eras!"],
         "name": ["Aaron,Anika,Julie,Justin,Graham"],
         "setPronouns": ["[heroThey:they][heroThem:them][heroTheir:their][heroTheirs:theirs]",
             "[heroThey:she][heroThem:her][heroTheir:her][heroTheirs:hers]",
@@ -32,7 +34,8 @@ let words =
 
         "objects": ["dinosaur bones", "medieval armor", "robot parts", "ancient swords", "futuristic gizmos", "dino eggs"],
         "noise": ["BUZZ", "BANG", "POP", "POW", "SKADOOSH", "WHIRR", "PVVVT", "ZRRT"],
-        "machine": ["Time-Inator 9000", "Delorian Mk 2", "Time Warp Whirligig", "Timey Wimey XR100", "Quantum Leapfrog"]
+        "machine": ["Time-Inator 9000", "Delorian Mk 2", "Time Warp Whirligig", "Timey Wimey XR100", "Quantum Leapfrog"],
+        "enemy": ["velociraptor", "pterodactyl", "T-Rex", "knight", "wizard", "archers", "killer robot", "space ship"]
     }
 };
 
