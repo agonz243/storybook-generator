@@ -30,8 +30,8 @@ let words =
             "#hero# was stunned by the sight of a massive battle between #enemy.s#, #enemy.s#, and #enemy.s#!",
             " The crash of cymbals and swords greeted our #hero# as a crowd of #enemy.s# met with a horde of #enemy.s#.",
             "A blinking terminal cast a neon glow over the #setting#, overrun with #enemy.s#?!", //want to use same setting as above here, how do?
-            " A gaggle of #types# #enemy.s# zoomed past #heroThem#, in hurried pursuit of a lone #enemy#",
-            "As if an everyday occurance, a band of #enemy.s# playing #instrument.s# accompanied an army of #enemy.s#"],
+            " A gaggle of #types# #enemy.s# zoomed past #heroThem#, in hurried pursuit of a lone #enemy#!",
+            "As if an everyday occurance, a band of #enemy.s# playing #instrument.s# accompanied an army of... #enemy.s#?"],
         "intermission": [],
         //ask aaron how to reuse the variable for time machine name and location
         // HEY GRAHAM! I added the reuse of the time machine name so now #machine# will always refer to the same name
