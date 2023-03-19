@@ -19,7 +19,7 @@ let words =
 {
     story: {
         "origin": ["#[#setPronouns#][#setSetting#][hero:#name#][#setMachine#]story#"],
-        "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission#|#end-plot#"],
+        "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission1#|#intermission2#|#end-plot#"],
         "data": ['{"setting": "#setting#"}'],
         "beginning": [],
         "introduction": ["After a rough tumble, #hero# opened #heroTheir# eyes and was shocked to find a #setting# before #heroThem#!"],
@@ -29,10 +29,12 @@ let words =
         "middle-plot": [ "#heroThey# stood in awe as #heroThey# gazed at a pack of fluffy T-rexes bounding after some #enemy.s#",
             "#hero# was stunned by the sight of a massive battle between #enemy.s#, #enemy.s#, and #enemy.s#!",
             " The crash of cymbals and swords greeted our #hero# as a crowd of #enemy.s# met with a horde of #enemy.s#.",
-            "A blinking terminal cast a neon glow over the #setting#, overrun with #enemy.s#?!", //want to use same setting as above here, how do?
+            "A blinking terminal cast a neon glow over the #setting#, overrun with... #enemy.s#?!", //want to use same setting as above here, how do?
             " A gaggle of #types# #enemy.s# zoomed past #heroThem#, in hurried pursuit of a lone #enemy#!",
             "As if an everyday occurance, a band of #enemy.s# playing #instrument.s# accompanied an army of... #enemy.s#?"],
-        "intermission": [],
+        "intermission1": ["This didn't make any sense! The time machine must have jumbled up places, people and things from all sorts of eras!",
+            "What?! The #machine# must have malfunctioned and mixed together all sorts of timelines!", "#hero# looked around at the #enemy.s# and #obstacle.s#. This must be the #machine#'s doing!"],
+        "intermission2": ["With a shake of the head and a slap on the cheeks, #hero# snapped back into focus.", "The high pitched yelp of #types.a# #enemy# snapped #hero# back into focus."],
         //ask aaron how to reuse the variable for time machine name and location
         // HEY GRAHAM! I added the reuse of the time machine name so now #machine# will always refer to the same name
         // in order to use the saved location, you can use the #setting# tag!
@@ -47,10 +49,10 @@ let words =
         "noise": ["BUZZ", "BANG", "POP", "POW", "SKADOOSH", "WHIRR", "PVVVT", "ZRRT"],
         "setMachine": ["[machine:Time-Inator 9000]", "[machine:Delorian Mk 2]", "[machine:Time Warp Whirligig]", "[machine:Timey Wimey XR100]", "[machine:Quantum Leapfrog]"],
         "enemy": ["velociraptor", "pterodactyl", "knight", "wizard", "archer", "killer robot", "space ship", "neanderthal"],
-        "types":["sorcerer", "cyborg", "apprentice", "brigand", "bard", "prehistoric", "psychic"],
+        "types":["sorcerer", "cyborg", "apprentice", "brigand", "bard", "prehistoric", "psychic", "armored"],
         "thingies":["club", "orb", "staff", "rock", "spear", "lasgun", "fang"],
         "instrument":["lute", "flute", "synthesizer", "harp", "drum"],
-        "obstacle": ["castle", "brontosaurus", "skyscraper", "purple & green robot"]
+        "obstacle": ["castle", "brontosaurus", "skyscraper", "purple and green robot", "cavalry", "dragon"]
     }
 };
 
@@ -60,7 +62,6 @@ let grammar;
 function loadGrammar() {
     // Set beginning text 
     words.story.beginning = beginningText;
-    words.story.intermission = intermissionText;
 
     grammar = tracery.createGrammar(words["story"]);
     let raw = grammar.flatten('#origin#');
