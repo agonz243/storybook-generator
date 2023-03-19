@@ -8,7 +8,7 @@ let data;
 
 let beginningText = [`One fine, interstellar morning, #hero# waltzed into the control room of Galactic Enterprise T-Ship 0345.| 
 #hero# was part of the cleaning crew for the ship's #machine# the galaxy's first working time machine!| 
-As usual, #heroThey# went about #heroTheir# normal routine, completing boring tasks like sweeping up #objects#, #objects#, 
+As usual, #heroThey# completed boring tasks like sweeping up #objects#, #objects#, 
 and #objects# from the machine's platform.|Suddenly, #hero# tripped over some #objects# and crashed into the controls!| 
 With a loud #noise# and a few #noise.s# and #noise.s#, the machine turned on with a bright flash!`]
 
@@ -26,7 +26,7 @@ let words =
         "middle-intro": ["As #hero# shook off #heroTheir# confusion, a steady rumble caught #heroTheir# attention.", 
             "While #hero# was still finding #heroTheir# bearings #heroThey# sensed something and quickly looked up at #heroTheir# surroundings.",
             "#heroThey# froze as #heroThey# noticed a towering shadow looming behind #heroThem# and slowly turned..."],
-        "middle-plot": [ "#heroThey# stood in awe as #heroThey# gazed at a pack of fluffy T-rexes bounding after their prey",
+        "middle-plot": [ "#heroThey# stood in awe as #heroThey# gazed at a pack of fluffy T-rexes bounding after some #enemy.s#",
             "#hero# was stunned by the sight of a massive battle between #enemy.s#, #enemy.s#, and #enemy.s#!",
             " The crash of cymbals and swords greeted our #hero# as a crowd of #enemy.s# met with a horde of #enemy.s#.",
             "A blinking terminal cast a neon glow over the #setting#, overrun with #enemy.s#?!", //want to use same setting as above here, how do?

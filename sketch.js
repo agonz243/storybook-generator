@@ -98,7 +98,7 @@ function draw() {
       textAlign(CENTER);
       textSize(24);
       fill("white");
-      text(sentences[index], width/2, height - 70, width * 0.9, height * 0.1);
+      text(sentences[index], width/2, height - 40, width * 0.9, height * 0.2);
       image(alien, 150, 2*height/4 - 50, alien.width / 2, alien.height / 2);
       
       // character.draw(positions[index], 3*height/4);
