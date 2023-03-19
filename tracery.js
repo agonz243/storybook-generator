@@ -6,14 +6,14 @@ let sentences = [
     "THE END"];
 let data;
 
-let beginningText = [`One fine, interstellar morning, #hero# waltzed into the control room of Galactic Enterprise T-Ship 0345.| 
-#hero# was part of the cleaning crew for the ship's #machine# the galaxy's first working time machine!| 
-As usual, #heroThey# completed boring tasks like sweeping up #objects#, #objects#, 
-and #objects# from the machine's platform.|Suddenly, #hero# tripped over some #objects# and crashed into the controls!| 
-With a loud #noise# and a few #noise.s# and #noise.s#, the machine turned on with a bright flash!`]
+let beginningText = [`One fine, interstellar morning, #hero# waltzed into the control room of Galactic Enterprise T-Ship 0345. 
+|#hero# was part of the cleaning crew for the ship's #machine# the galaxy's first working time machine! 
+|As usual, #heroThey# completed boring tasks like sweeping up #objects#, #objects#, 
+and #objects# from the machine's platform.|Suddenly, #hero# tripped over some #objects# and crashed into the controls! 
+|With a loud #noise# and a few #noise.s# and #noise.s#, the machine turned on with a bright flash!`]
 
-let intermissionText = [`This didn't make any sense! The time machine must have jumbled up places, people and things from all sorts of eras!|
-With a shake of the head and a slap on the cheeks, #hero# snapped back into focus.`]
+let intermissionText = [`This didn't make any sense! The time machine must have jumbled up places, people and things from all sorts of eras!
+|With a shake of the head and a slap on the cheeks, #hero# snapped back into focus.`]
 
 let words =
 {
@@ -46,7 +46,7 @@ let words =
         "objects": ["dinosaur bones", "medieval armor", "robot parts", "ancient swords", "futuristic gizmos", "dino eggs", "flux capacitors", "forbidden tomes", "thagomizer fossils", "cow tools"],
         "noise": ["BUZZ", "BANG", "POP", "POW", "SKADOOSH", "WHIRR", "PVVVT", "ZRRT"],
         "setMachine": ["[machine:Time-Inator 9000]", "[machine:Delorian Mk 2]", "[machine:Time Warp Whirligig]", "[machine:Timey Wimey XR100]", "[machine:Quantum Leapfrog]"],
-        "enemy": ["velociraptor", "pterodactyl", "knight", "wizard", "archer", "killer robot", "space ship", "neanderthal", ""],
+        "enemy": ["velociraptor", "pterodactyl", "knight", "wizard", "archer", "killer robot", "space ship", "neanderthal"],
         "types":["sorcerer", "cyborg", "apprentice", "brigand", "bard", "prehistoric", "psychic"],
         "thingies":["club", "orb", "staff", "rock", "spear", "lasgun", "fang"],
         "instrument":["lute", "flute", "synthesizer", "harp", "drum"],
