@@ -32,6 +32,10 @@ let isSetup;
 
 let alien;
 
+function preload() {
+  crayonFont = loadFont('assets/fonts/DK Cool Crayon.ttf');
+}
+
 function setup() {
   username = "Gooby";
   state = "character";
@@ -98,6 +102,7 @@ function draw() {
       textAlign(CENTER);
       textSize(24);
       fill("white");
+      textFont(crayonFont);
       text(sentences[index], width/2, height - 20, width * 0.9, height * 0.2);
       image(alien, 150, 2*height/4 - 50, alien.width / 2, alien.height / 2);
       
