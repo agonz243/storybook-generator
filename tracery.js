@@ -18,7 +18,7 @@ let intermissionText = [`This didn't make any sense! The time machine must have 
 let words =
 {
     story: {
-        "origin": ["#[#setPronouns#][#setSetting#][hero:#name#][#setMachine#]story#"],
+        "origin": ["#[#setPronouns#][#setSetting#][hero:#name#][#setMachine#][#setWeapons#]story#"],
         "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission1#|#intermission2#|#end-plot#|#end-plot2#|#end-plot3#"],
         "data": ['{"setting": "#setting#"}'],
         //----------------------------------------------------------------------------------------------------
@@ -39,15 +39,16 @@ let words =
         "end-plot":["There! Just past a #obstacle#, #hero# spotted a familiar gleam... The #machine#! There was just one problem..."], 
         "end-plot2":["To get there, #hero# must cross the perilous battlefield created by the #machine#'s shenaniganery.", 
             "Getting to the #machine# would be no easy task. #hero# must make it through the chaos!", "The #machine# was so far away! #hero# had no choice but to find #heroTheir# way through the mixed up mess."],
-        "end-plot3": ["#hero# hardened their resolve, grabbed #thingies.a# and dove headfirst into a group of #enemy.s#.",
-            "With cat-like reflexes, #hero# snatched up #thingies.a# and darted past #obstacle.a#.",
-            "Determined to get home, #hero#, equipped with #thingies.a# and #thingies.a#, set off towards the #machine#."],
+        "end-plot3": ["#hero# hardened their resolve, grabbed #rightWeapon.a# and dove headfirst into a group of #enemy.s#.",
+            "With cat-like reflexes, #hero# snatched up #rightWeapon.a# and darted past #obstacle.a#.",
+            "Determined to get home, #hero#, equipped with #leftWeapon.a# and #rightWeapon.a#, set off towards the #machine#."],
         //----------------------------------------------------------------------------------------------------
         "name": ["Aaron,Anika,Julie,Justin,Graham"],
         "setPronouns": ["[heroThey:they][heroThem:them][heroTheir:their][heroTheirs:theirs]",
             "[heroThey:she][heroThem:her][heroTheir:her][heroTheirs:hers]",
             "[heroThey:he][heroThem:him][heroTheir:his][heroTheirs:his]"],
         "setSetting": ["[setting:prehistoric land]", "[setting:futuristic city]", "[setting:victorian castle]"],
+        "setWeapons":["[leftWeapon:#thingies#][rightWeapon:#thingies#]"],
         //----------------------------------------------------------------------------------------------------
         "objects": ["dinosaur bones", "medieval armor", "robot parts", "ancient swords", "futuristic gizmos", "dino eggs", "flux capacitors", "forbidden tomes", "thagomizer fossils", "cow tools"],
         "noise": ["BUZZ", "BANG", "POP", "POW", "SKADOOSH", "WHIRR", "PVVVT", "ZRRT"],
