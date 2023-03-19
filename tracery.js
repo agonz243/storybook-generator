@@ -34,7 +34,9 @@ let words =
             "As if an everyday occurance, a band of #enemy.s# playing #instrument.s# accompanied an army of #enemy.s#"],
         "intermission": [],
         //ask aaron how to reuse the variable for time machine name and location
-        "end-plot":["Through the <blank> and under the <blank> #hero# spotted a familiar gleam... The #machine#! There was just one problem..."], 
+        // HEY GRAHAM! I added the reuse of the time machine name so now #machine# will always refer to the same name
+        // in order to use the saved location, you can use the #setting# tag!
+        "end-plot":["There! Just past a #obstacle#, #hero# spotted a familiar gleam... The #machine#! There was just one problem..."], 
         "end-plot2":[],//want to have another "problem" here, can mirror above format for middle plot, or somehow keep middle plot selection and write individual solns for them?
         "name": ["Aaron,Anika,Julie,Justin,Graham"],
         "setPronouns": ["[heroThey:they][heroThem:them][heroTheir:their][heroTheirs:theirs]",
@@ -47,7 +49,8 @@ let words =
         "enemy": ["velociraptor", "pterodactyl", "knight", "wizard", "archer", "killer robot", "space ship", "neanderthal", ""],
         "types":["sorcerer", "cyborg", "apprentice", "brigand", "bard", "prehistoric", "psychic"],
         "thingies":["club", "orb", "staff", "rock", "spear", "lasgun", "fang"],
-        "instrument":["lute", "flute", "synthesizer", "harp", "drum"]
+        "instrument":["lute", "flute", "synthesizer", "harp", "drum"],
+        "obstacle": ["castle", "brontosaurus", "skyscraper", "purple & green robot"]
     }
 };
 
