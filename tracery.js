@@ -18,8 +18,8 @@ With a shake of the head and a slap on the cheeks, #hero# snapped back into focu
 let words =
 {
     story: {
-        "origin": ["#[#setPronouns#][#setSetting#][hero:#name#]story#"],
-        "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission#"],
+        "origin": ["#[#setPronouns#][#setSetting#][hero:#name#][#setMachine#]story#"],
+        "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission#|#end-plot#"],
         "data": ['{"setting": "#setting#"}'],
         "beginning": [],
         "introduction": ["After a rough tumble, #hero# opened #heroTheir# eyes and was shocked to find a #setting# before #heroThem#!"],
@@ -31,7 +31,7 @@ let words =
             " The crash of cymbals and swords greeted our #hero# as a crowd of #enemy.s# met with a horde of #enemy.s#.",
             "A blinking terminal cast a neon glow over the #setting#, overrun with #enemy.s#?!", //want to use same setting as above here, how do?
             " A gaggle of #types# #enemy.s# zoomed past #heroThem#, in hurried pursuit of a lone #enemy#",
-            "As if an everyday occurance, a band of #enemy.s# playing #instrument.s# accompanied a choir of #enemy.s"],
+            "As if an everyday occurance, a band of #enemy.s# playing #instrument.s# accompanied an army of #enemy.s#"],
         "intermission": [],
         //ask aaron how to reuse the variable for time machine name and location
         "end-plot":["Through the <blank> and under the <blank> #hero# spotted a familiar gleam... The #machine#! There was just one problem..."], 
@@ -41,14 +41,13 @@ let words =
             "[heroThey:she][heroThem:her][heroTheir:her][heroTheirs:hers]",
             "[heroThey:he][heroThem:him][heroTheir:his][heroTheirs:his]"],
         "setSetting": ["[setting:prehistoric land]", "[setting:futuristic city]", "[setting:victorian castle]"],
-
         "objects": ["dinosaur bones", "medieval armor", "robot parts", "ancient swords", "futuristic gizmos", "dino eggs", "flux capacitors", "forbidden tomes", "thagomizer fossils", "cow tools"],
         "noise": ["BUZZ", "BANG", "POP", "POW", "SKADOOSH", "WHIRR", "PVVVT", "ZRRT"],
-        "machine": ["Time-Inator 9000", "Delorian Mk 2", "Time Warp Whirligig", "Timey Wimey XR100", "Quantum Leapfrog"],
+        "setMachine": ["[machine:Time-Inator 9000]", "[machine:Delorian Mk 2]", "[machine:Time Warp Whirligig]", "[machine:Timey Wimey XR100]", "[machine:Quantum Leapfrog]"],
         "enemy": ["velociraptor", "pterodactyl", "knight", "wizard", "archer", "killer robot", "space ship", "neanderthal", ""],
         "types":["sorcerer", "cyborg", "apprentice", "brigand", "bard", "prehistoric", "psychic"],
         "thingies":["club", "orb", "staff", "rock", "spear", "lasgun", "fang"],
-        "instruments":["lute", "flute", "synthesizer", "harp", "drum"]
+        "instrument":["lute", "flute", "synthesizer", "harp", "drum"]
     }
 };
 

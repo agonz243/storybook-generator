@@ -85,10 +85,10 @@ function draw() {
       
       // draw background
       image(bg, 0,0);
-
+      rectMode(CENTER);
       // Draw text box rectangle
       push()
-      rectMode(CENTER);
+      
       noStroke();
       fill(95, 97, 99, 200);
       rect(width/2, height - 50, width, height/5, 20, 20);
@@ -98,7 +98,7 @@ function draw() {
       textAlign(CENTER);
       textSize(24);
       fill("white");
-      text(sentences[index], width/2, height - 70);
+      text(sentences[index], width/2, height - 70, width * 0.9, height * 0.1);
       image(alien, 150, 2*height/4 - 50, alien.width / 2, alien.height / 2);
       
       // character.draw(positions[index], 3*height/4);
