@@ -50,7 +50,7 @@ let words =
         "types":["sorcerer", "cyborg", "apprentice", "brigand", "bard", "prehistoric", "psychic"],
         "thingies":["club", "orb", "staff", "rock", "spear", "lasgun", "fang"],
         "instrument":["lute", "flute", "synthesizer", "harp", "drum"],
-        "obstacle": ["castle", "brontosaurus", "skyscraper", "purple & green robot"]
+        "obstacle": ["castle", "brontosaurus", "skyscraper", "purple and green robot"]
     }
 };
 
