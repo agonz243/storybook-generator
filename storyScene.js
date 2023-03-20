@@ -28,8 +28,6 @@ function nextPage() {
         index++;
         expressionIndex++;
         currExpression = expressions[expressionIndex];
-      } else {
-        // insert code to change to end screen
       }
       break;
   }

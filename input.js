@@ -59,9 +59,9 @@ function pronounInput() {
 
 // hide all buttons
 function hideInput() {
-    nameInput.hide();
-    nameButton.hide();
-    heButton.hide();
-    sheButton.hide();
-    theyButton.hide();
+    nameInput.remove();
+    nameButton.remove();
+    heButton.remove();
+    sheButton.remove();
+    theyButton.remove();
 }

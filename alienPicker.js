@@ -80,6 +80,7 @@ function setUpCharacterButtons() {
     button6.mousePressed(prevEye);
 }
 
+// remove buttons
 function hideCharacterButtons() {
     button1.remove();
     button2.remove();

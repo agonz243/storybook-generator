@@ -35,7 +35,9 @@ let setting;
 let isSetup;
 
 function preload() {
+  // load font
   crayonFont = loadFont('assets/fonts/DK Cool Crayon.ttf');
+  // load images
   loadAlienSelector();
 }
 
@@ -55,6 +57,7 @@ function setup() {
   // set story index
   index = 0;
 
+  // set current info for alien
   colorIndex = 0;
   currColor = colors[colorIndex];
   eyeIndex = 0;
@@ -80,6 +83,7 @@ function draw() {
       image(aliens[currColor][currCostume]["eyes"][currEye], 150, 50);
       image(aliens[currColor][currCostume]["mouths"][currMouth], 150, 50);
 
+      // title text
       textAlign(CENTER);
       textSize(80);
       fill('white');
@@ -91,18 +95,24 @@ function draw() {
         words.story.name = [username];
         pronounInput();
         loadGrammar();
+
         // hide buttons
         hideInput();
         hideCharacterButtons();
 
-        // pick background for story
+        // pick background and costume for story
         setting = data["setting"].split(' ').join('_');
         pickBackground(setting);
         currCostume = setting;
 
+        // set up expressions
         expressionIndex = 0;
         currExpression = expressions[expressionIndex];
+
+        // load expressions and alien costume
         loadAlien();
+
+        // finish set up
         isSetup = true;
       }
 
