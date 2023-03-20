@@ -19,7 +19,7 @@ let words =
 {
     story: {
         "origin": ["#[#setPronouns#][#setSetting#][hero:#name#][#setMachine#][#setWeapons#]story#"],
-        "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission1#|#intermission2#|#end-plot#|#end-plot2#|#end-plot3#"],
+        "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission1#|#intermission2#|#end-plot#|#end-plot2#|#end-plot3#|#end-plot4#|#finale#"],
         "data": ['{"setting": "#setting#"}'],
         //----------------------------------------------------------------------------------------------------
         "beginning": [],
@@ -42,6 +42,13 @@ let words =
         "end-plot3": ["#hero# hardened their resolve, grabbed #rightWeapon.a# and dove headfirst into a group of #enemy.s#.",
             "With cat-like reflexes, #hero# snatched up #rightWeapon.a# and darted past #obstacle.a#.",
             "Determined to get home, #hero#, equipped with #leftWeapon.a# and #rightWeapon.a#, set off towards the #machine#."],
+        "end-plot4":["With the strength of 1000 suns, #hero# singlehandedly took down three #enemy2#s with #heroTheir# #rightWeapon#.", 
+            "#hero# distracted the #types# #enemy2# chasing after #heroThem# by throwing their #rightWeapon# and dashed for the #machine#.",
+            "A pacifist #enemy# agreed to take #hero# to the #machine#'s platform in exchange for #heroTheir# #rightWeapon#. That was easy!"],
+        "finale":["Finally! #hero# found themselves in front of the #machine#! Time to put all of this behind #heroThem#!",
+            "At last! The #machine# was in reach! Time to get the heck out of here and send everything back to where it belongs!",
+            "Eureka! This wild ride was finally at an end. Time to go home.",
+            "Thank Goodness! The #machine# was still in working order. A lucky break! #hero# jumped on, and made #heroTheir# way home."],
         //----------------------------------------------------------------------------------------------------
         "name": ["Aaron,Anika,Julie,Justin,Graham"],
         "setPronouns": ["[heroThey:they][heroThem:them][heroTheir:their][heroTheirs:theirs]",
@@ -54,10 +61,11 @@ let words =
         "noise": ["BUZZ", "BANG", "POP", "POW", "SKADOOSH", "WHIRR", "PVVVT", "ZRRT"],
         "setMachine": ["[machine:Time-Inator 9000]", "[machine:Delorian Mk 2]", "[machine:Time Warp Whirligig]", "[machine:Timey Wimey XR100]", "[machine:Quantum Leapfrog]"],
         "enemy": ["velociraptor", "pterodactyl", "knight", "wizard", "archer", "killer robot", "space ship", "neanderthal"],
-        "types":["sorcerer", "cyborg", "apprentice", "brigand", "bard", "prehistoric", "psychic", "armored"],
+        "enemy2":["giant sloth", "alligator", "silverback gorilla", "terminator", "Dalek", "sarlak", "xenomorph", "witch", "horse rider", "executioner"],
+        "types":["sorcerer", "cyborg", "apprentice", "brigand", "bard", "prehistoric", "psychic", "armored", "mecha", "bio"],
         "thingies":["club", "orb", "staff", "rock", "spear", "lasgun", "fang", "fazer gun", "broadsword", "bone"],
         "instrument":["lute", "flute", "synthesizer", "harp", "drum"],
-        "obstacle": ["castle", "brontosaurus", "skyscraper", "purple and green robot", "cavalry", "dragon"]
+        "obstacle": ["castle", "brontosaurus", "skyscraper", "purple and green robot", "cavalry", "dragon", "catapult"]
     }
 };
 
