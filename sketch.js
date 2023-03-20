@@ -1,14 +1,6 @@
-// Author: Anika Mahajan
-// Date: March 7, 2023
-// Purpose: Story Prototype for CMPM 169 Team 7's Final Project
-
-// Image Attributions
-// castle background: https://wallpaperaccess.com/cartoon-castle
-// swamp background: Carolina - https://www.pinterest.co.uk/pin/559994534901761192/
-// forest background: https://www.youtube.com/watch?v=z-qr_fxv18o
-
-// expression eyes mouth
-
+// Author: Anika Mahajan, Aaron Gonzales, Graham Miller, Justin Beedle, Julie Khou
+// Date: March 20, 2023
+// Purpose: Storybook Generator for CMPM 169 Team 7's Final Project
 
 // GLOBAL VARIABLES
 
@@ -23,7 +15,8 @@ let currColor;
 
 let currCostume;
 
-
+let expressions = ["happy", "happy", "happy", "shocked", "shocked", "shocked", "confused", "shocked", "shocked", "happy", "happy", "sad", "happy"];
+let expressionIndex;
 let currExpression;
 
 let eyes = ["big", "small", "tight"];
@@ -81,6 +74,7 @@ function setup() {
 function draw() {
   switch (state) {
     case ("character"):
+      // draw parts of alien
       image(aliens[currColor][currCostume]["body"], 150, 50);
       image(aliens[currColor][currCostume]["head"], 150, 50);
       image(aliens[currColor][currCostume]["eyes"][currEye], 150, 50);
@@ -104,17 +98,20 @@ function draw() {
         // pick background for story
         setting = data["setting"].split(' ').join('_');
         pickBackground(setting);
-        // currCostume = setting;
+        currCostume = setting;
+
+        expressionIndex = 0;
+        currExpression = expressions[expressionIndex];
         loadAlien();
         isSetup = true;
       }
 
       // draw background
       image(bg, 0, 0);
-      rectMode(CENTER);
-      // Draw text box rectangle
-      push()
 
+      // Draw text box rectangle
+      rectMode(CENTER);
+      push()
       noStroke();
       fill(95, 97, 99, 200);
       rect(width / 2, height - 50, width, height / 5, 20, 20);
@@ -127,8 +124,9 @@ function draw() {
       text(sentences[index], width / 2, height - 20, width * 0.9, height * 0.2);
 
       // draw alien
-      image(aliens[currColor][currCostume]["body"], 150, 2 * height / 4 - 50, aliens[currColor][currCostume]["body"].width / 2, aliens[currColor][currCostume]["body"].height / 2);
-      image(aliens[currColor][currCostume]["head"], 150, 2 * height / 4 - 50, aliens[currColor][currCostume]["head"].width / 2, aliens[currColor][currCostume]["head"].height / 2);
+      image(aliens[currColor][currCostume]["body"], width/2 - 50, 2 * height / 4 - 50, aliens[currColor][currCostume]["body"].width / 2, aliens[currColor][currCostume]["body"].height / 2);
+      image(aliens[currColor][currCostume]["head"], width/2 - 50, 2 * height / 4 - 50, aliens[currColor][currCostume]["head"].width / 2, aliens[currColor][currCostume]["head"].height / 2);
+      image(aliens[currColor][currCostume][currExpression][currEye][currMouth], width/2 - 50, 2 * height / 4 - 50, aliens[currColor][currCostume]["head"].width / 2, aliens[currColor][currCostume]["head"].height / 2);
 
       // character.draw(positions[index], 3*height/4);
       break;

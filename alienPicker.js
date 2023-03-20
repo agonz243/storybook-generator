@@ -1,4 +1,5 @@
 function loadAlienSelector() {
+    // loops through json object to add images
     for (const color in aliens) {
         aliens[color]["normal"]["body"] = loadImage('assets/character/body/' + color + '_normal_body.png');
         aliens[color]["normal"]["head"] = loadImage('assets/character/head/' + color + '_normal_head.png');
@@ -12,7 +13,15 @@ function loadAlienSelector() {
 }
 
 function loadAlien() {
-    
+    for (const key in aliens[currColor][currCostume]) {
+        // loads only necessary costume for head and body
+        if (key === "head" || key === "body") {
+            aliens[currColor][currCostume][key] = loadImage('assets/character/' + key + '/' + currColor + '_' + currCostume + '_' + key + '.png');
+        // loads facial expressions based on eyes and mouth
+        } else {
+            aliens[currColor][currCostume][key][currEye][currMouth] = loadImage('assets/character/expressions/' + key + '_' + currEye + '_' + currMouth + '.png');
+        }
+    }
 }
 
 function setUpCharacterButtons() {

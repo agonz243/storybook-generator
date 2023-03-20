@@ -25,7 +25,9 @@ function nextPage() {
       break;
     case ("story"):
       if (index < sentences.length - 1) {
-        return index++;
+        index++;
+        expressionIndex++;
+        currExpression = expressions[expressionIndex];
       } else {
         // insert code to change to end screen
       }
