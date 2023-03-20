@@ -15,7 +15,7 @@ let currColor;
 
 let currCostume;
 
-let expressions = ["happy", "happy", "happy", "shocked", "shocked", "shocked", "confused", "shocked", "shocked", "happy", "happy", "sad", "happy", "happy", "happy"];
+let expressions = ["happy", "happy", "happy", "shocked", "shocked", "shocked", "confused", "shocked", "shocked", "happy", "happy", "sad", "happy", "happy", "happy", "happy"];
 let expressionIndex;
 let currExpression;
 

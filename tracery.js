@@ -19,7 +19,7 @@ let words =
 {
     story: {
         "origin": ["#[#setPronouns#][#setSetting#][hero:#name#][#setMachine#][#setWeapons#]story#"],
-        "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission1#|#intermission2#|#end-plot#|#end-plot2#|#end-plot3#|#end-plot4#|#finale#"],
+        "story": ["#data#|#beginning#|#introduction#|#middle-intro#|#middle-plot#|#intermission1#|#intermission2#|#end-plot#|#end-plot2#|#end-plot3#|#end-plot4#|#finale#|THE END"],
         "data": ['{"setting": "#setting#"}'],
         //----------------------------------------------------------------------------------------------------
         "beginning": [],

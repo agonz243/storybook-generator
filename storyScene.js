@@ -36,15 +36,7 @@ function nextPage() {
 
 // sets background image based on background string
 function pickBackground(bgName) {
-  if (bgName === "victorian_castle") {
-    bg = loadImage('assets/background/castle.jpg');
-  } else if (bgName === "prehistoric_land") {
-    bg = loadImage('assets/background/swamp.jpg');
-  } else {
-    bg = loadImage('assets/background/forest.jpg');
-  }
-
-  //bg = loadImage('assets/background/' + bgName +.jpg');
+  bg = loadImage('assets/background/' + bgName + '.png');
 }
 
 function styleButton(b) {
