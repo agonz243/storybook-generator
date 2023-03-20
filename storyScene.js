@@ -28,6 +28,36 @@ function nextPage() {
         index++;
         expressionIndex++;
         currExpression = expressions[expressionIndex];
+      } else {
+        // call initial setup again
+        textAlign(LEFT);
+        background('#ECA869');
+
+        // initialize variables
+        username = "Gooby";
+        state = "character";
+
+        // positions for character
+        positions = [width / 4, width / 2, 3 * width / 4, width * 2];
+
+        // set story index
+        index = 0;
+
+        // set current info for alien
+        colorIndex = 0;
+        currColor = colors[colorIndex];
+        eyeIndex = 0;
+        currEye = eyes[eyeIndex];
+        mouthIndex = 0;
+        currMouth = mouths[mouthIndex];
+        currCostume = "normal";
+
+        // create and style buttons and inputs
+        setUpNextButton();
+        setUpCharacterButtons();
+        setUpInput();
+
+        isSetup = false;
       }
       break;
   }
