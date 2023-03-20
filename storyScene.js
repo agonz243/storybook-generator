@@ -57,6 +57,7 @@ function nextPage() {
         setUpCharacterButtons();
         setUpInput();
 
+        music.stop();
         isSetup = false;
       }
       break;
