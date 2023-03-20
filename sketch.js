@@ -1,4 +1,4 @@
-// Author: Anika Mahajan, Aaron Gonzales, Graham Miller, Justin Beedle, Julie Khou
+// Authors: Anika Mahajan, Aaron Gonzales, Graham Miller, Justin Beedle, Julie Khou
 // Date: March 20, 2023
 // Purpose: Storybook Generator for CMPM 169 Team 7's Final Project
 
