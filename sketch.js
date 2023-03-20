@@ -16,27 +16,30 @@
 let states = ["character", "story"];
 let state;
 
+// variables for alien image
 let colors = ["yellow", "red", "blue", "green"];
 let colorIndex;
 let currColor;
+
 let currCostume;
+
+
 let currExpression;
+
+let eyes = ["big", "small", "tight"];
+let eyeIndex;
 let currEye;
+
+let mouths = ["crunch", "wide", "squiggle"];
+let mouthIndex;
 let currMouth;
 
-// colors
-// costumes
-// facial expression
-// eye type
-// mouth type
-
+// variables from tracery
 let username;
-
-let isSetup;
-
-// let alien;
-
 let setting;
+
+// checks if story scene is set up yet
+let isSetup;
 
 function preload() {
   crayonFont = loadFont('assets/fonts/DK Cool Crayon.ttf');
@@ -61,6 +64,10 @@ function setup() {
 
   colorIndex = 0;
   currColor = colors[colorIndex];
+  eyeIndex = 0;
+  currEye = eyes[eyeIndex];
+  mouthIndex = 0;
+  currMouth = mouths[mouthIndex];
   currCostume = "normal";
 
   // create and style buttons and inputs
@@ -76,6 +83,8 @@ function draw() {
     case ("character"):
       image(aliens[currColor][currCostume]["body"], 150, 50);
       image(aliens[currColor][currCostume]["head"], 150, 50);
+      image(aliens[currColor][currCostume]["eyes"][currEye], 150, 50);
+      image(aliens[currColor][currCostume]["mouths"][currMouth], 150, 50);
 
       textAlign(CENTER);
       textSize(80);

@@ -2,6 +2,12 @@ function loadAlienSelector() {
     for (const color in aliens) {
         aliens[color]["normal"]["body"] = loadImage('assets/character/body/' + color + '_normal_body.png');
         aliens[color]["normal"]["head"] = loadImage('assets/character/head/' + color + '_normal_head.png');
+        for (const eye in aliens[color]["normal"]["eyes"]) {
+            aliens[color]["normal"]["eyes"][eye] = loadImage('assets/character/eyes/' + eye + 'Eyes.png');
+        }
+        for (const mouth in aliens[color]["normal"]["mouths"]) {
+            aliens[color]["normal"]["mouths"][mouth] = loadImage('assets/character/mouths/' + mouth + '.png');
+        }
     }
 }
 
@@ -83,11 +89,19 @@ function nextColor() {
 }
 
 function nextMouth() {
-
+    mouthIndex++;
+    if (mouthIndex >= mouths.length) {
+        mouthIndex = 0;
+    }
+    currMouth = mouths[mouthIndex];
 }
 
 function nextEye() {
-
+    eyeIndex++;
+    if (eyeIndex >= eyes.length) {
+        eyeIndex = 0;
+    }
+    currEye = eyes[eyeIndex];
 }
 
 function prevColor() {
@@ -99,9 +113,17 @@ function prevColor() {
 }
 
 function prevMouth() {
-
+    mouthIndex--;
+    if (mouthIndex < 0) {
+        mouthIndex = mouths.length - 1;
+    }
+    currMouth = mouths[mouthIndex];
 }
 
 function prevEye() {
-
+    eyeIndex--;
+    if (eyeIndex < 0) {
+        eyeIndex = eyes.length - 1;
+    }
+    currEye = eyes[eyeIndex];
 }

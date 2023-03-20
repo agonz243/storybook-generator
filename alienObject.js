@@ -218,7 +218,17 @@ let aliens = {
         },
         "normal": {
             "head": "bleh.png",
-            "body": "bleh.png"
+            "body": "bleh.png",
+            "eyes": {
+                "big": "bleh.png",
+                "small": "bleh.png",
+                "tight": "bleh.png"
+            },
+            "mouths": {
+                "crunch": "bleh.png",
+                "wide": "bleh.png",
+                "squiggle": "bleh.png"
+            }
         }
     },
     "red": {
@@ -440,7 +450,17 @@ let aliens = {
         },
         "normal": {
             "head": "bleh.png",
-            "body": "bleh.png"
+            "body": "bleh.png",
+            "eyes": {
+                "big": "bleh.png",
+                "small": "bleh.png",
+                "tight": "bleh.png"
+            },
+            "mouths": {
+                "crunch": "bleh.png",
+                "wide": "bleh.png",
+                "squiggle": "bleh.png"
+            }
         }
     },
     "blue": {
@@ -662,7 +682,17 @@ let aliens = {
         },
         "normal": {
             "head": "bleh.png",
-            "body": "bleh.png"
+            "body": "bleh.png",
+            "eyes": {
+                "big": "bleh.png",
+                "small": "bleh.png",
+                "tight": "bleh.png"
+            },
+            "mouths": {
+                "crunch": "bleh.png",
+                "wide": "bleh.png",
+                "squiggle": "bleh.png"
+            }
         }
     },
     "green": {
@@ -884,7 +914,17 @@ let aliens = {
         },
         "normal": {
             "head": "bleh.png",
-            "body": "bleh.png"
+            "body": "bleh.png",
+            "eyes": {
+                "big": "bleh.png",
+                "small": "bleh.png",
+                "tight": "bleh.png"
+            },
+            "mouths": {
+                "crunch": "bleh.png",
+                "wide": "bleh.png",
+                "squiggle": "bleh.png"
+            }
         },
     }
 };
