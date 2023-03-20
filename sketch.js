@@ -2,6 +2,11 @@
 // Date: March 20, 2023
 // Purpose: Storybook Generator for CMPM 169 Team 7's Final Project
 
+// Sound Attributions:
+//   Fantasy Classical Themes by TheoJT under the Creative Commons 0 License.
+//   DrumJam_119bpm_2022-07-21_18.04.31.wav by szegvari under the Creative Commons 0 License.
+//   Upbeat loop by mistermender under the Creative Commons 0 License.
+
 // GLOBAL VARIABLES
 
 // states on what to display
