@@ -67,6 +67,9 @@ function nextPage() {
 // sets background image based on background string
 function pickBackground(bgName) {
   bg = loadImage('assets/background/' + bgName + '.png');
+  music = sounds[bgName];
+  music.play();
+  music.loop();
 }
 
 function styleButton(b) {

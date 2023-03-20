@@ -34,15 +34,18 @@ let setting;
 // checks if story scene is set up yet
 let isSetup;
 
+// sounds
+let sounds = {"victorian_castle": "", "futuristic_city": "", "prehistoric_land": ""};
+
 function preload() {
   // load font
   crayonFont = loadFont('assets/fonts/DK Cool Crayon.ttf');
   // load images
   loadAlienSelector();
 
-  cityMusic = loadSound('assets/sounds/CityTheme.mp3');
-  castleMusic = loadSound('assets/sounds/FantasyTheme.mp3');
-  prehistoricMusic = loadSound('assets/sounds/PrehistoricTheme.wav');
+  sounds["futuristic_city"] = loadSound('assets/sounds/futuristic_city.mp3');
+  sounds["victorian_castle"] = loadSound('assets/sounds/victorian_castle.mp3');
+  sounds["prehistoric_land"] = loadSound('assets/sounds/prehistoric_land.mp3');
 }
 
 function setup() {
@@ -123,16 +126,7 @@ function draw() {
       // draw background
       image(bg, 0, 0);
 
-      if (setting == "victorian_castle"){
-        castleMusic.play();
-        castleMusic.loop();
-      } else if (setting == "prehistoric_land"){
-        prehistoricMusic.play();
-        prehistoricMusic.loop();
-      } else if (setting == "futuristic_city"){
-        cityMusic.play();
-        cityMusic.loop();
-      }
+      
 
       // Draw text box rectangle
       rectMode(CENTER);
