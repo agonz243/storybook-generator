@@ -39,6 +39,10 @@ function preload() {
   crayonFont = loadFont('assets/fonts/DK Cool Crayon.ttf');
   // load images
   loadAlienSelector();
+
+  cityMusic = loadSound('assets/sounds/CityTheme.mp3');
+  castleMusic = loadSound('assets/sounds/FantasyTheme.mp3');
+  prehistoricMusic = loadSound('assets/sounds/PrehistoricTheme.wav');
 }
 
 function setup() {
@@ -118,6 +122,17 @@ function draw() {
 
       // draw background
       image(bg, 0, 0);
+
+      if (setting == "victorian_castle"){
+        castleMusic.play();
+        castleMusic.loop();
+      } else if (setting == "prehistoric_land"){
+        prehistoricMusic.play();
+        prehistoricMusic.loop();
+      } else if (setting == "futuristic_city"){
+        cityMusic.play();
+        cityMusic.loop();
+      }
 
       // Draw text box rectangle
       rectMode(CENTER);
